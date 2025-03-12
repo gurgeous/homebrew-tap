@@ -10,7 +10,7 @@ class Vectro < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/gurgeous/vectro/releases/download/0.1.0/vectro_0.1.0_darwin_amd64.tar.gz"
-      sha256 "37027ad5fbac3c6b73e0866dfb979cca60ca0f189c1c2d6df6dcb3697e4c4bd3"
+      sha256 "dde206df485864217ed78cab8b02dc225a715b42b024686655365c565f1307a6"
 
       def install
         bin.install "vectro"
@@ -18,7 +18,7 @@ class Vectro < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/gurgeous/vectro/releases/download/0.1.0/vectro_0.1.0_darwin_arm64.tar.gz"
-      sha256 "534b7ccbb8698a452ac01670a8e39f50f8dbc1ec0c7abc19c966b1c7a8ecb5c6"
+      sha256 "2d7919f22fa9411a78ddf24f0f7badd871cd16adb3bc3ccdb3c144ffe3d34de1"
 
       def install
         bin.install "vectro"
@@ -30,7 +30,7 @@ class Vectro < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/gurgeous/vectro/releases/download/0.1.0/vectro_0.1.0_linux_amd64.tar.gz"
-        sha256 "78ede9687c5a0309568099f44641abb82628b34d7006e213182b81f5789f7aa5"
+        sha256 "b58afbfd485914bd908dad53db2cefcda568481f9bb36e9b1424e033394773a6"
 
         def install
           bin.install "vectro"
@@ -40,7 +40,7 @@ class Vectro < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/gurgeous/vectro/releases/download/0.1.0/vectro_0.1.0_linux_arm64.tar.gz"
-        sha256 "c620fa1052eb5d486f7028acafdd74bf8fcb0888b8f0044ccd023219a1a4b524"
+        sha256 "5159ea3ba6c1b29cacdb2c9ba3ed177869e43ff21a28611d1ddfc7e7b7067194"
 
         def install
           bin.install "vectro"

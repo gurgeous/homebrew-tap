@@ -10,7 +10,7 @@ class Tennis < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/gurgeous/tennis/releases/download/v0.1.0/tennis-0.1.0-darwin-amd64.tar.gz"
-      sha256 "effeb12eccab991df99282e2d9a2644abfbd9ee652d85cb330bfe8d0a23287f4"
+      sha256 "2158a5541449c00e5df079b055af1a7caac69617ee1afd83c11c24816240b054"
 
       def install
         bin.install "tennis"
@@ -20,7 +20,7 @@ class Tennis < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/gurgeous/tennis/releases/download/v0.1.0/tennis-0.1.0-darwin-arm64.tar.gz"
-      sha256 "0bd4792be201d4270636890b68c752120f7d4fc2f39e0c4ac5eff57cbab91bbf"
+      sha256 "fd713e7c3bc9a8ed0e72acfc30f4d0f974c637288a23d16092e21d26349447cd"
 
       def install
         bin.install "tennis"
@@ -33,7 +33,7 @@ class Tennis < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/gurgeous/tennis/releases/download/v0.1.0/tennis-0.1.0-linux-amd64.tar.gz"
-      sha256 "cef8fd5511b1e79ae05f21181238334eee87a37fe92b5856c70666b509b76cfe"
+      sha256 "549d9402e0257d4f7cfd510d2cf3c158c8691fb61d319b7f37e931f0bae3eb2d"
       def install
         bin.install "tennis"
         bash_completion.install "completions/tennis.bash" => "tennis"
@@ -42,7 +42,7 @@ class Tennis < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/gurgeous/tennis/releases/download/v0.1.0/tennis-0.1.0-linux-arm64.tar.gz"
-      sha256 "8df96067e6d75ea6d3f073ab88a7ef9aef08818cb5a19ac10be4306f6656fd1b"
+      sha256 "8a64a3de7061ea19da67afd5279c28ee71303082b722f676a28557c20c12409c"
       def install
         bin.install "tennis"
         bash_completion.install "completions/tennis.bash" => "tennis"

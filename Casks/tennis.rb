@@ -16,22 +16,22 @@ cask "tennis" do
   on_macos do
     on_intel do
       url "https://github.com/gurgeous/tennis/releases/download/v#{version}/tennis-#{version}-darwin-amd64.tar.gz"
-      sha256 "09c5e2679bec23d05fe91ef3e1f2fc0d5f847d26db81e1126d1a69251253c962"
+      sha256 "ec2a1ca03378ca4a784c12e0552971dfe489a97ea95bc1d5cc5b644f89c4f71d"
     end
     on_arm do
       url "https://github.com/gurgeous/tennis/releases/download/v#{version}/tennis-#{version}-darwin-arm64.tar.gz"
-      sha256 "0ce5f67f5588905613c6f9e0041b7884820b1387082da20e274d46219e8e2a30"
+      sha256 "77c1f07ea09da92f9a94104ac195c8c658c10d29f130dca08583a2e973917aa0"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/gurgeous/tennis/releases/download/v#{version}/tennis-#{version}-linux-amd64.tar.gz"
-      sha256 "33adb3f77f40e0ff691f225c3a7b074c1b7048e657c58a6a3b82ad6b94290e63"
+      sha256 "61a897edcd1f59a67e9d5d3692d3429e5de2239f666f5c41d379571f0d68c690"
     end
     on_arm do
       url "https://github.com/gurgeous/tennis/releases/download/v#{version}/tennis-#{version}-linux-arm64.tar.gz"
-      sha256 "d53d6d9e6a32ebc5dde22cb217d635f688b65ec20cac360d430038b1c2d3d712"
+      sha256 "8c2986a318d586de1155af2b0efe7f68e04dfab684750adafd66fd1edd2645a5"
     end
   end
 

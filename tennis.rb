@@ -8,50 +8,34 @@ class Tennis < Formula
   version "0.1.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/gurgeous/tennis/releases/download/v0.1.0/tennis-0.1.0-darwin-amd64.tar.gz"
-      sha256 "0f4015d837dac9962bbf69abc94b6028600ae1a8d18d417811ca45576e757e01"
-
-      def install
-        bin.install "tennis"
-        bash_completion.install "completions/tennis.bash" => "tennis"
-        zsh_completion.install "completions/_tennis" => "_tennis"
-      end
-    end
     if Hardware::CPU.arm?
-      url "https://github.com/gurgeous/tennis/releases/download/v0.1.0/tennis-0.1.0-darwin-arm64.tar.gz"
-      sha256 "92e7ce4e94af8ac653bfba93eb710faec55233ac5e73e04882bef3af802be3bd"
+      url "https://github.com/gurgeous/tennis/releases/download/v0.1.0/tennis_0.1.0_darwin_arm64.tar.gz"
+      sha256 "603e0acb64652179e5c1398e2a5a26dbb17516ff81b65fff093395527efdac7f"
 
       def install
         bin.install "tennis"
-        bash_completion.install "completions/tennis.bash" => "tennis"
-        zsh_completion.install "completions/_tennis" => "_tennis"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gurgeous/tennis/releases/download/v0.1.0/tennis-0.1.0-linux-amd64.tar.gz"
-      sha256 "f3399cb6266839bee98780cd336e8e21ee7c514e978675460930a6d4ff8f7491"
+      url "https://github.com/gurgeous/tennis/releases/download/v0.1.0/tennis_0.1.0_linux_amd64.tar.gz"
+      sha256 "683b937e9f6e190b822cc344890f7b3a79f6d78f6a877da0bfcfd7a3f97d1171"
       def install
         bin.install "tennis"
-        bash_completion.install "completions/tennis.bash" => "tennis"
-        zsh_completion.install "completions/_tennis" => "_tennis"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gurgeous/tennis/releases/download/v0.1.0/tennis-0.1.0-linux-arm64.tar.gz"
-      sha256 "6e844a6ae2d34b86cc670225b7cdeb94df71d35b976608cd48ce53601e2c95ee"
+      url "https://github.com/gurgeous/tennis/releases/download/v0.1.0/tennis_0.1.0_linux_arm64.tar.gz"
+      sha256 "ab21ec16178b0621f45e93b033a4b0285c1b4fd52c30730510f50500a5be5524"
       def install
         bin.install "tennis"
-        bash_completion.install "completions/tennis.bash" => "tennis"
-        zsh_completion.install "completions/_tennis" => "_tennis"
       end
     end
   end
 
   test do
-    system "#{bin}/tennis --version"
+    system "./tennis --version"
   end
 end

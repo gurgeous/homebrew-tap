@@ -5,12 +5,12 @@
 class Tennis < Formula
   desc "Stylish CSV tables in your terminal."
   homepage "https://github.com/gurgeous/tennis"
-  version "0.1.0"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/gurgeous/tennis/releases/download/v0.1.0/tennis_0.1.0_darwin_arm64.tar.gz"
-      sha256 "603e0acb64652179e5c1398e2a5a26dbb17516ff81b65fff093395527efdac7f"
+      url "https://github.com/gurgeous/tennis/releases/download/v0.0.2/tennis_0.0.2_darwin_arm64.tar.gz"
+      sha256 "0d7d4e6087f26ef51958b261c47588aa900e13dd6cf0073763ec54da576b984d"
 
       def install
         bin.install "tennis"
@@ -20,15 +20,15 @@ class Tennis < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gurgeous/tennis/releases/download/v0.1.0/tennis_0.1.0_linux_amd64.tar.gz"
-      sha256 "683b937e9f6e190b822cc344890f7b3a79f6d78f6a877da0bfcfd7a3f97d1171"
+      url "https://github.com/gurgeous/tennis/releases/download/v0.0.2/tennis_0.0.2_linux_amd64.tar.gz"
+      sha256 "b7cd020d706a8a2ffbb570399fd2d5da63540d5ede9dc32779fcfcb0eb877ad3"
       def install
         bin.install "tennis"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gurgeous/tennis/releases/download/v0.1.0/tennis_0.1.0_linux_arm64.tar.gz"
-      sha256 "ab21ec16178b0621f45e93b033a4b0285c1b4fd52c30730510f50500a5be5524"
+      url "https://github.com/gurgeous/tennis/releases/download/v0.0.2/tennis_0.0.2_linux_arm64.tar.gz"
+      sha256 "31d681d9a60c5b52ef62a3169f8785ad6931bdbff52e6ed3da10e9a1a1856c6b"
       def install
         bin.install "tennis"
       end

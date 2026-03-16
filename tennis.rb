@@ -5,32 +5,41 @@
 class Tennis < Formula
   desc "Stylish CSV tables in your terminal."
   homepage "https://github.com/gurgeous/tennis"
-  version "0.0.2"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/gurgeous/tennis/releases/download/v0.0.2/tennis_0.0.2_darwin_arm64.tar.gz"
-      sha256 "6d362d99d8481fa2e44eca0d0c4e7ae76c0ac68395593efce9b517f9157f62b5"
+      url "https://github.com/gurgeous/tennis/releases/download/v0.3.0/tennis_0.3.0_darwin_arm64.tar.gz"
+      sha256 "a95543f0ceb0174f3ad6715d766b251378f27c0142e693ab45ac9261ed0b5584"
 
-      def install
+      define_method(:install) do
         bin.install "tennis"
+        man1.install "extra/tennis.1"
+        bash_completion.install "extra/tennis.bash" => "tennis"
+        zsh_completion.install "extra/_tennis" => "_tennis"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gurgeous/tennis/releases/download/v0.0.2/tennis_0.0.2_linux_amd64.tar.gz"
-      sha256 "23d87431f8d9b2ebdccdcc94f711494ab8f873e2338377fbb03a6467779bb029"
-      def install
+      url "https://github.com/gurgeous/tennis/releases/download/v0.3.0/tennis_0.3.0_linux_amd64.tar.gz"
+      sha256 "05e37496c759ac0066978ea77d2df6aa9a755de2134ffc760428fe642ad05f03"
+      define_method(:install) do
         bin.install "tennis"
+        man1.install "extra/tennis.1"
+        bash_completion.install "extra/tennis.bash" => "tennis"
+        zsh_completion.install "extra/_tennis" => "_tennis"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gurgeous/tennis/releases/download/v0.0.2/tennis_0.0.2_linux_arm64.tar.gz"
-      sha256 "26f6aca5a20ca93df0036b9e992d77ee111f191f30db814da9de3f8fc70aa3f7"
-      def install
+      url "https://github.com/gurgeous/tennis/releases/download/v0.3.0/tennis_0.3.0_linux_arm64.tar.gz"
+      sha256 "6dc6bb597aba853dc44bade4bbefd0301104a138e14e196541e168e7a862a047"
+      define_method(:install) do
         bin.install "tennis"
+        man1.install "extra/tennis.1"
+        bash_completion.install "extra/tennis.bash" => "tennis"
+        zsh_completion.install "extra/_tennis" => "_tennis"
       end
     end
   end

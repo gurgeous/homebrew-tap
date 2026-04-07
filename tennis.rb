@@ -5,12 +5,12 @@
 class Tennis < Formula
   desc "Stylish CSV tables in your terminal."
   homepage "https://github.com/gurgeous/tennis"
-  version "0.3.0"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/gurgeous/tennis/releases/download/v0.3.0/tennis_0.3.0_darwin_arm64.tar.gz"
-      sha256 "a95543f0ceb0174f3ad6715d766b251378f27c0142e693ab45ac9261ed0b5584"
+      url "https://github.com/gurgeous/tennis/releases/download/v0.4.0/tennis_0.4.0_darwin_arm64.tar.gz"
+      sha256 "93d8a0c63f19aa9d3188b475b366c74f9853ceecb12df4e33c1b43d1660a4cea"
 
       define_method(:install) do
         bin.install "tennis"
@@ -23,8 +23,8 @@ class Tennis < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gurgeous/tennis/releases/download/v0.3.0/tennis_0.3.0_linux_amd64.tar.gz"
-      sha256 "05e37496c759ac0066978ea77d2df6aa9a755de2134ffc760428fe642ad05f03"
+      url "https://github.com/gurgeous/tennis/releases/download/v0.4.0/tennis_0.4.0_linux_amd64.tar.gz"
+      sha256 "73c0202a47d1541d5b3868bee5a2e8d1464cd7d26565fc190867f3161adf4b86"
       define_method(:install) do
         bin.install "tennis"
         man1.install "extra/tennis.1"
@@ -33,8 +33,8 @@ class Tennis < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gurgeous/tennis/releases/download/v0.3.0/tennis_0.3.0_linux_arm64.tar.gz"
-      sha256 "6dc6bb597aba853dc44bade4bbefd0301104a138e14e196541e168e7a862a047"
+      url "https://github.com/gurgeous/tennis/releases/download/v0.4.0/tennis_0.4.0_linux_arm64.tar.gz"
+      sha256 "6b8d543affa7419a73ba1de3be4ac30427e447002ae26387b67def0a47735246"
       define_method(:install) do
         bin.install "tennis"
         man1.install "extra/tennis.1"

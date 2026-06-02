@@ -10,7 +10,7 @@ class Gshoot < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/gurgeous/gshoot/releases/download/v0.1.0/gshoot_0.1.0_darwin_amd64.tar.gz"
-      sha256 "62f9ec0d641feafce1468196fb3cec76efb9c73dbf92a77a1907dd6a5df6de16"
+      sha256 "a9ec2ab826ebaa01d3b1541f136939afbce961e9435e5322a8c2ef115e4b9ab3"
 
       define_method(:install) do
         bin.install "gshoot"
@@ -20,7 +20,7 @@ class Gshoot < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/gurgeous/gshoot/releases/download/v0.1.0/gshoot_0.1.0_darwin_arm64.tar.gz"
-      sha256 "ca128fb7deff9c110cc931f841e6e5551786b1c882398926da5a5bceb2d396cc"
+      sha256 "90fe1db1eab71b64b9da56de2b9b0b490822c645e4d96b581cc6625f886d8fef"
 
       define_method(:install) do
         bin.install "gshoot"
@@ -33,7 +33,7 @@ class Gshoot < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/gurgeous/gshoot/releases/download/v0.1.0/gshoot_0.1.0_linux_amd64.tar.gz"
-      sha256 "23e8a901bfb92f493a2af5f2c41040129af8e8784e6484c3d9dc70159e8f9319"
+      sha256 "cd3f60679b601449a03a19e98ae2339e2b8f546fc58a4bb8fbe35187ff116e14"
       define_method(:install) do
         bin.install "gshoot"
         bash_completion.install "extra/gshoot.bash" => "gshoot"
@@ -42,7 +42,7 @@ class Gshoot < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/gurgeous/gshoot/releases/download/v0.1.0/gshoot_0.1.0_linux_arm64.tar.gz"
-      sha256 "1378ffdea400f0737bd05d8b8b7a4b2ac3ad501035ebb47f9c056c99a904ec97"
+      sha256 "cad5e2d4df6396ef01002f608b25d87e32eea12aaae629886a04372257a0deb4"
       define_method(:install) do
         bin.install "gshoot"
         bash_completion.install "extra/gshoot.bash" => "gshoot"

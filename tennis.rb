@@ -5,12 +5,12 @@
 class Tennis < Formula
   desc "Stylish CSV tables in your terminal."
   homepage "https://github.com/gurgeous/tennis"
-  version "0.5.0"
+  version "0.6.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gurgeous/tennis/releases/download/v0.5.0/tennis_0.5.0_darwin_amd64.tar.gz"
-      sha256 "21b0aa715d95fd86d8d3cb3930d9bd4b8c47d7cfdc8db2bce41c7a32c03e057a"
+      url "https://github.com/gurgeous/tennis/releases/download/v0.6.0/tennis_0.6.0_darwin_amd64.tar.gz"
+      sha256 "afb4892b6209b1e521f73c751175fab1c96a0b1d08a0e76f49f41ad5762d0550"
 
       define_method(:install) do
         bin.install "tennis"
@@ -20,8 +20,8 @@ class Tennis < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gurgeous/tennis/releases/download/v0.5.0/tennis_0.5.0_darwin_arm64.tar.gz"
-      sha256 "89355a62474fbc4b98864fc590cfffb51e0c40730449eb1558bbe35f4696e9bd"
+      url "https://github.com/gurgeous/tennis/releases/download/v0.6.0/tennis_0.6.0_darwin_arm64.tar.gz"
+      sha256 "4cef3f4dc59cb6a37542eae4fe7c34b47fe153e0628ec37b157b1a8122f3739b"
 
       define_method(:install) do
         bin.install "tennis"
@@ -34,8 +34,8 @@ class Tennis < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gurgeous/tennis/releases/download/v0.5.0/tennis_0.5.0_linux_amd64.tar.gz"
-      sha256 "6441eb3e783c80e03518a096434b5bd30038dab329b47122fd04fcf8cbaafd0b"
+      url "https://github.com/gurgeous/tennis/releases/download/v0.6.0/tennis_0.6.0_linux_amd64.tar.gz"
+      sha256 "d4377113fece9a535d49737ba8e1ffb469bbb702abe7d9962bd6a045669d6e53"
       define_method(:install) do
         bin.install "tennis"
         man1.install "extra/tennis.1"
@@ -44,8 +44,8 @@ class Tennis < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gurgeous/tennis/releases/download/v0.5.0/tennis_0.5.0_linux_arm64.tar.gz"
-      sha256 "dcb8835e4f701ba2670e68a69115e882840aa631ff08d542c2c71a9e48e27fef"
+      url "https://github.com/gurgeous/tennis/releases/download/v0.6.0/tennis_0.6.0_linux_arm64.tar.gz"
+      sha256 "26c842d3681cb920c3712f927b877995c1e0814acb40cfd5548c0c4c2c25e458"
       define_method(:install) do
         bin.install "tennis"
         man1.install "extra/tennis.1"

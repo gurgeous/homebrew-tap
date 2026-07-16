@@ -5,12 +5,12 @@
 class Tennis < Formula
   desc "Stylish CSV tables in your terminal."
   homepage "https://github.com/gurgeous/tennis"
-  version "0.6.0"
+  version "0.7.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gurgeous/tennis/releases/download/v0.6.0/tennis_0.6.0_darwin_amd64.tar.gz"
-      sha256 "afb4892b6209b1e521f73c751175fab1c96a0b1d08a0e76f49f41ad5762d0550"
+      url "https://github.com/gurgeous/tennis/releases/download/v0.7.0/tennis_0.7.0_darwin_amd64.tar.gz"
+      sha256 "5f6685274c29e89c583fa2f87d8ffd708f0ec8ba63738eb8b9c469728525acf9"
 
       define_method(:install) do
         bin.install "tennis"
@@ -20,8 +20,8 @@ class Tennis < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gurgeous/tennis/releases/download/v0.6.0/tennis_0.6.0_darwin_arm64.tar.gz"
-      sha256 "4cef3f4dc59cb6a37542eae4fe7c34b47fe153e0628ec37b157b1a8122f3739b"
+      url "https://github.com/gurgeous/tennis/releases/download/v0.7.0/tennis_0.7.0_darwin_arm64.tar.gz"
+      sha256 "b25a0adc8fbeb92e71356c07b88b01c849fad1238fff18fe19e0777a95a0b5c7"
 
       define_method(:install) do
         bin.install "tennis"
@@ -34,7 +34,7 @@ class Tennis < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gurgeous/tennis/releases/download/v0.6.0/tennis_0.6.0_linux_amd64.tar.gz"
+      url "https://github.com/gurgeous/tennis/releases/download/v0.7.0/tennis_0.6.0_linux_amd64.tar.gz"
       sha256 "d4377113fece9a535d49737ba8e1ffb469bbb702abe7d9962bd6a045669d6e53"
       define_method(:install) do
         bin.install "tennis"
@@ -44,7 +44,7 @@ class Tennis < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gurgeous/tennis/releases/download/v0.6.0/tennis_0.6.0_linux_arm64.tar.gz"
+      url "https://github.com/gurgeous/tennis/releases/download/v0.7.0/tennis_0.6.0_linux_arm64.tar.gz"
       sha256 "26c842d3681cb920c3712f927b877995c1e0814acb40cfd5548c0c4c2c25e458"
       define_method(:install) do
         bin.install "tennis"

@@ -5,14 +5,14 @@
 class Gshoot < Formula
   desc "Magically import/export CSVs from Google Sheets"
   homepage "https://github.com/gurgeous/gshoot"
-  version "0.2.0"
+  version "0.3.0"
 
   depends_on "openclaw/tap/gogcli"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gurgeous/gshoot/releases/download/v0.2.0/gshoot_0.2.0_darwin_amd64.tar.gz"
-      sha256 "02903617b0b224ee6f603614c699849e4ae18bf70ce4e4641c1e6420e8b64c16"
+      url "https://github.com/gurgeous/gshoot/releases/download/v0.3.0/gshoot_0.3.0_darwin_amd64.tar.gz"
+      sha256 "90dda5e56be4c554f589d38a82887b1c8d97a40203b6e41b0bd1a90cc70e6d80"
 
       define_method(:install) do
         bin.install "gshoot"
@@ -21,8 +21,8 @@ class Gshoot < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gurgeous/gshoot/releases/download/v0.2.0/gshoot_0.2.0_darwin_arm64.tar.gz"
-      sha256 "7c34275a6ef206ec29313cf8850d2d61115d37ad5025c68df6c96bea5c7688ce"
+      url "https://github.com/gurgeous/gshoot/releases/download/v0.3.0/gshoot_0.3.0_darwin_arm64.tar.gz"
+      sha256 "9f2268a80784f10fb7638a88402e62f85acdb54390f776c4bb152af2d209cbac"
 
       define_method(:install) do
         bin.install "gshoot"
@@ -34,8 +34,8 @@ class Gshoot < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gurgeous/gshoot/releases/download/v0.2.0/gshoot_0.2.0_linux_amd64.tar.gz"
-      sha256 "9b61f53df24e5de5a12de2074a35d8679aecdef8b0647f60528ef9adc525d17c"
+      url "https://github.com/gurgeous/gshoot/releases/download/v0.3.0/gshoot_0.3.0_linux_amd64.tar.gz"
+      sha256 "41ba6c19dd95bce5a69dbb42d585cf7441769eef82cb743f87b009691fa56041"
       define_method(:install) do
         bin.install "gshoot"
         bash_completion.install "extra/gshoot.bash" => "gshoot"
@@ -43,8 +43,8 @@ class Gshoot < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gurgeous/gshoot/releases/download/v0.2.0/gshoot_0.2.0_linux_arm64.tar.gz"
-      sha256 "89b4a6470ad44ee31dc967c4756b91fe50b9cfda25b01fb811b44edc3dda627e"
+      url "https://github.com/gurgeous/gshoot/releases/download/v0.3.0/gshoot_0.3.0_linux_arm64.tar.gz"
+      sha256 "11883a3b2589f02366a3219e513e79fc044178f75c8b065690acae926c74c45b"
       define_method(:install) do
         bin.install "gshoot"
         bash_completion.install "extra/gshoot.bash" => "gshoot"

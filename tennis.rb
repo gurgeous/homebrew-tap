@@ -4,23 +4,23 @@
 class Tennis < Formula
   desc "Stylish CSV tables in your terminal."
   homepage "https://github.com/gurgeous/tennis"
-  version "0.7.1"
+  version "0.8.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gurgeous/tennis/releases/download/v0.7.1/tennis_0.7.1_darwin_amd64.tar.gz"
-      sha256 "c8b88389e75b897568ee626776ace38b14c0ccefe49baa1e19941eb330d9bd26"
+      url "https://github.com/gurgeous/tennis/releases/download/v0.8.0/tennis_0.8.0_darwin_amd64.tar.gz"
+      sha256 "6d2d85a7b9bd9a9bf5856373ba6694ebf3122ac4169ffe9d841b9fc1d8d80e1a"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gurgeous/tennis/releases/download/v0.7.1/tennis_0.7.1_darwin_arm64.tar.gz"
-      sha256 "5beebf10ab4d5a275803f4847b042f78b3dcdd358633f7cc3a3fc44584441970"
+      url "https://github.com/gurgeous/tennis/releases/download/v0.8.0/tennis_0.8.0_darwin_arm64.tar.gz"
+      sha256 "6ed189233abaa72af452fff2791192088ac5a6f74a9198c8fe1f906fa975fb2e"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gurgeous/tennis/releases/download/v0.7.1/tennis_0.7.1_linux_amd64.tar.gz"
-      sha256 "e1da6df85b543d6e98b49bce760e86f0aee693570d8840fcbad5c716542675f2"
+      url "https://github.com/gurgeous/tennis/releases/download/v0.8.0/tennis_0.8.0_linux_amd64.tar.gz"
+      sha256 "b4df8fb8b757f1455f7f08af18146078d3bf660ecab92cf09a7c4987556a50e4"
     end
   end
 
